@@ -8,13 +8,11 @@ function addTask() {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
 
-        // Create a remove button
         let removeButton = document.createElement("span");
         removeButton.innerHTML = "\u00d7";
         removeButton.classList.add("remove-button");
         li.appendChild(removeButton);
 
-        // Create an edit button
         let editButton = document.createElement("span");
         editButton.innerHTML = "\u270E"; // Edit icon (pencil)
         editButton.classList.add("edit-button");
